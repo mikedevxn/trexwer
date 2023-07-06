@@ -35,6 +35,12 @@ header .trexwer-logo img {
     width: 50px;
     border-radius: 60px;
     box-shadow:  0 0 3px #fff;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+header .trexwer-logo img:hover {
+    border-radius: 12px;
 }
 
 header .trexwer-logo .name-logo {
