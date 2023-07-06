@@ -259,7 +259,7 @@ header .nav_menu ul .active-link {
 
 @media screen and (max-width: 768px) {
     .main_container {
-        padding: 90px 5%;
+        padding: 120px 5%;
     }
     .body-main-content {
         width: 100%;
