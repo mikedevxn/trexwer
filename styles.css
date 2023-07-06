@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    cursor: default;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    padding: 0 15%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .trexwer-logo {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;  
+}
+
+header .trexwer-logo img {
+    width: 50px;
+    border-radius: 60px;
+    box-shadow:  0 0 3px #fff;
+}
+
+header .trexwer-logo .name-logo {
+    font-size: 18px;
+    color: aqua;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/*Estilos del Open Menu*/
+.open_menu_container {
+    display: none;
+}
+
+/*Estilos del Nav Menu*/
+header .nav_menu ul {
+    display: flex;
+}
+
+header .nav_menu ul .nav-links {
+    color: #b8b8b8;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 550;
+    margin: 0 .7rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+header .nav_menu ul .nav-links:hover {
+    color: aqua;
+}
+
+header .nav_menu ul .active-link {
+    color: aqua;
+}
+
+/*Estilos del MainContainer XD*/
+.main_container {
+    padding: 100px 15%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-main-content {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #ffffff15;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.body-main-content h1 {
+    text-align: center;
+    color: aqua;
+    padding: 1rem 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.body-main-content .trexwer-description {
+    color: #FFF;
+    margin: 1rem 0 .5rem;
+    padding: 0 1.5rem;
+    font-weight: 200;
+}
+
+.body-main-content .main-generator {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-generator .generated-code {
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.main-generator button {
+    padding: .3rem 1rem;
+    border: none;
+    border-radius: 12px;
+    color: #FFF;
+    background: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 0 0 3px aqua;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.main-generator button:hover {
+    transform: scale(.97);
+}
+
+/*Estilos del Efecto Burbuja*/
+.burbuja{
+    border-radius: 50%;
+    background: aqua;
+    opacity: .3;
+    position: absolute;
+    bottom: 0;
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+    0% {bottom: 0;opacity: 0;}
+    30% {transform: translateX(30px);}
+    50% {opacity: .4;}
+    100% {bottom: 100vh;opacity: 0;}
+}
+
+@keyframes movimiento{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(30px);}
+    100% {transform: translateY(0);}
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_container {
+        padding: 90px 5%;
+    }
+    .body-main-content {
+        width: 100%;
+    }
+
+    .open_menu_container {
+        display: block;
+    }
+
+    .open_menu_container img {
+        width: 40px;
+        background: #ffffff8c;
+        border-radius: 40px;
+    }
+
+    .nav_menu {
+        width: 100%;
+        height: 100vh;
+        background: black;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: all .35s ease;
+        z-index: 10000;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .nav_menu img {
+        width: 40px;
+        background: #ffffff8c;
+        border-radius: 40px;
+        margin: 2rem 1rem 0 ;
+        transform: rotate(180deg);
+    }
+
+    .nav_menu ul {
+        margin-top: 3.5rem;
+        flex-direction: column;
+    }
+
+    .nav_menu ul .nav-links {
+        display: block;
+        padding: .5rem;
+    }
+}
