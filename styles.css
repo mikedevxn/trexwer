@@ -73,6 +73,11 @@ header .nav_menu ul .active-link {
     color: aqua;
 }
 
+/*Close menu*/
+.nav_menu #close-menu {
+    display: none;
+}
+
 /*Estilos del MainContainer XD*/
 .main_container {
     padding: 120px 15%;
@@ -290,12 +295,13 @@ header .nav_menu ul .active-link {
         right: 0;
     }
 
-    .nav_menu img {
+    .nav_menu #close-menu {
         width: 40px;
         background: #ffffff8c;
         border-radius: 40px;
         margin: 2rem 1rem 0 ;
         transform: rotate(180deg);
+        display: block;
     }
 
     .nav_menu ul {
